@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
-    
+    let dummyViewController = DummyViewController()
        
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        //window?.rootViewController = OnboardingContainerViewController()
        loginViewController.delegate = self
        onboardingContainerViewController.delegate = self
+       dummyViewController.logoutDelegate = self
        
        window?.rootViewController = loginViewController
        
@@ -36,7 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: LoginViewControllerDelegate{
     func didLogin() {
-        setRootViewController(onboardingContainerViewController)
+        if LocalState.hasOnboarded{
+            setRootViewController(dummyViewController)
+        } else{
+            setRootViewController(onboardingContainerViewController)
+        }
+        
     }
     
     
@@ -44,10 +50,17 @@ extension AppDelegate: LoginViewControllerDelegate{
 
 extension AppDelegate: OnboardingContainerViewControllerDelegate{
     func didFinishOnboarding() {
-        print("foo - finished Onbaording page")
+        LocalState.hasOnboarded = true
+        setRootViewController(dummyViewController)
     }
 }
-    
+
+extension AppDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController)
+    }
+}
+
 
 extension AppDelegate{
     func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
