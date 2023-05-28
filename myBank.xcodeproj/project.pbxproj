@@ -18,6 +18,7 @@
 		374ABD582A22FA8E009D1D49 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374ABD572A22FA8E009D1D49 /* LocalState.swift */; };
 		374ABD5A2A2309ED009D1D49 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374ABD592A2309ED009D1D49 /* UIViewController+Utils.swift */; };
 		374ABD5C2A230B0E009D1D49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374ABD5B2A230B0E009D1D49 /* MainViewController.swift */; };
+		377D0CCF2A23C05C00524EF5 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D0CCE2A23C05C00524EF5 /* AccountSummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		374ABD572A22FA8E009D1D49 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		374ABD592A2309ED009D1D49 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		374ABD5B2A230B0E009D1D49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		377D0CCE2A23C05C00524EF5 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +68,13 @@
 		37103CE82A1CFFE5007E8F95 /* myBank */ = {
 			isa = PBXGroup;
 			children = (
-				374ABD562A22FA6C009D1D49 /* Utils */,
-				374ABD4F2A227648009D1D49 /* Onboarding */,
 				37103CE92A1CFFE5007E8F95 /* AppDelegate.swift */,
-				37103CFF2A1D0327007E8F95 /* Login */,
-				37103CFD2A1D02B2007E8F95 /* Files */,
 				374ABD5B2A230B0E009D1D49 /* MainViewController.swift */,
+				37103CFF2A1D0327007E8F95 /* Login */,
+				374ABD4F2A227648009D1D49 /* Onboarding */,
+				377D0CCD2A23C02C00524EF5 /* AccountSummary */,
+				374ABD562A22FA6C009D1D49 /* Utils */,
+				37103CFD2A1D02B2007E8F95 /* Files */,
 			);
 			path = myBank;
 			sourceTree = "<group>";
@@ -112,6 +115,14 @@
 				374ABD592A2309ED009D1D49 /* UIViewController+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		377D0CCD2A23C02C00524EF5 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				377D0CCE2A23C05C00524EF5 /* AccountSummaryViewController.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 				37103CEE2A1CFFE5007E8F95 /* LoginViewController.swift in Sources */,
 				374ABD532A227AA8009D1D49 /* OnboardingViewController.swift in Sources */,
 				374ABD5C2A230B0E009D1D49 /* MainViewController.swift in Sources */,
+				377D0CCF2A23C05C00524EF5 /* AccountSummaryViewController.swift in Sources */,
 				37103CEA2A1CFFE5007E8F95 /* AppDelegate.swift in Sources */,
 				374ABD512A227757009D1D49 /* OnboardingContainerViewController.swift in Sources */,
 			);
