@@ -21,6 +21,8 @@
 		376BC4572A258E8C001AD61E /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BC4562A258E8C001AD61E /* DecimalUtils.swift */; };
 		376BC4592A258ED0001AD61E /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BC4582A258ED0001AD61E /* CurrencyFormatter.swift */; };
 		376BC4682A259974001AD61E /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BC4672A259974001AD61E /* CurrencyFormatterTests.swift */; };
+		376BC46A2A26B5C7001AD61E /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BC4692A26B5C7001AD61E /* NSNotificationName.swift */; };
+		376BC46C2A26B8B1001AD61E /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BC46B2A26B8B1001AD61E /* UITextField+SecureToggle.swift */; };
 		377D0CCF2A23C05C00524EF5 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D0CCE2A23C05C00524EF5 /* AccountSummaryViewController.swift */; };
 		377D0CD12A23C32E00524EF5 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D0CD02A23C32E00524EF5 /* AccountSummaryHeaderView.swift */; };
 		377D0CD32A23C36400524EF5 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377D0CD22A23C36400524EF5 /* AccountSummaryHeaderView.xib */; };
@@ -55,6 +57,8 @@
 		376BC4582A258ED0001AD61E /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		376BC45E2A2598AF001AD61E /* myBankUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myBankUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		376BC4672A259974001AD61E /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		376BC4692A26B5C7001AD61E /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		376BC46B2A26B8B1001AD61E /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		377D0CCE2A23C05C00524EF5 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		377D0CD02A23C32E00524EF5 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		377D0CD22A23C36400524EF5 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				374ABD592A2309ED009D1D49 /* UIViewController+Utils.swift */,
 				376BC4562A258E8C001AD61E /* DecimalUtils.swift */,
 				376BC4582A258ED0001AD61E /* CurrencyFormatter.swift */,
+				376BC4692A26B5C7001AD61E /* NSNotificationName.swift */,
+				376BC46B2A26B8B1001AD61E /* UITextField+SecureToggle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 				37103D012A1D0388007E8F95 /* LoginView.swift in Sources */,
 				374ABD582A22FA8E009D1D49 /* LocalState.swift in Sources */,
 				377D0CD12A23C32E00524EF5 /* AccountSummaryHeaderView.swift in Sources */,
+				376BC46C2A26B8B1001AD61E /* UITextField+SecureToggle.swift in Sources */,
 				374ABD552A22F326009D1D49 /* DummyViewController.swift in Sources */,
 				376BC4592A258ED0001AD61E /* CurrencyFormatter.swift in Sources */,
 				376BC4572A258E8C001AD61E /* DecimalUtils.swift in Sources */,
+				376BC46A2A26B5C7001AD61E /* NSNotificationName.swift in Sources */,
 				37103CEE2A1CFFE5007E8F95 /* LoginViewController.swift in Sources */,
 				377D0CD72A23D8E300524EF5 /* AccountSummaryCell.swift in Sources */,
 				374ABD532A227AA8009D1D49 /* OnboardingViewController.swift in Sources */,
